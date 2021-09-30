@@ -1,0 +1,39 @@
+.modalMenu {
+  width: 100vw;
+  height: 100vh;
+  padding-top: calc(3% + 60px);
+  padding-left: 10%;
+  background-color: rgba($color: $mainBlue, $alpha: 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  &__remover {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .menuList {
+    font-family: "RobotoI";
+    font-size: 22px;
+
+    &__item {
+      padding-top: 32px;
+      padding-left: 10px;
+
+      // &:hover {
+        
+      // }
+      
+      & > a {
+        text-decoration: none;
+        color: rgba($color: white, $alpha: 0.7);
+        transition: 0.5s;
+
+        &:hover {
+          color: rgba($color: white, $alpha: 1);
+        }
+      }
+    }
+  }
+}

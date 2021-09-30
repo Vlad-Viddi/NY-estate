@@ -1,0 +1,88 @@
+.header {
+  padding: $sidePaddings;
+  height: 100vh;
+  background: no-repeat url("../../../imgs/header/2.jpg");
+  background-size: cover;
+  background-position: center 50%;
+  font-family: "RobotoI";
+
+  .logoVrapper {
+    display: flex;
+    justify-content: center;
+
+    .logo {
+      display: inline-block;
+      text-align: center;
+      color: white;
+      position: relative;
+      z-index: 2;
+  
+      &__img {
+        height: 76px;
+        margin: auto;
+      }
+  
+      &__text {
+        font-family: $logoFont;
+        font-size: $logoFontSize;
+      }
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -40px;
+    color: white;
+
+    .nav {
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+
+      &__icon {
+        width: $menuIconWidth;
+        padding: 10px;
+      }
+    }
+
+    .call {
+      display: flex;
+      align-items: center;
+
+      &__number {
+        opacity: 0;
+        padding-right: 10px;
+        font-size: 17px;
+        transform: translateX(150px);
+        text-decoration: none;
+        color: white;
+
+        // this line for two way animation
+        // transition: opacity 1s 0.5s, transform 1s ease-in;
+      }
+
+      &__icon {
+        width: $menuIconWidth;
+        padding: 10px;
+      }
+
+      &:hover .call__number {
+        cursor: pointer;
+        opacity: 1;
+        transform: translateX(0px); 
+        transition: opacity 0.5s, transform 0.25s linear;
+      }
+    }
+  }
+
+  .title {
+    font-family: $logoFont;
+    color: white;
+    font-size: 80px;
+    padding-top: 30%
+  }
+}
