@@ -20,10 +20,17 @@
     &__item {
       padding-top: 32px;
       padding-left: 10px;
+      position: relative;
 
-      // &:hover {
+      &:hover::after {
+        content: "______________________";
+        position: absolute;
+        top: 50px;
+        left: -10px;
+        color: white;
+
         
-      // }
+      }
       
       & > a {
         text-decoration: none;

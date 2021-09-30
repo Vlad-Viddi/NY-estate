@@ -6,7 +6,7 @@ import phone from '../../../imgs/header/icons/phone-mob.svg';
 import sandwich from '../../../imgs/header/icons/sandwich.svg';
 
 export const Header = () => {
-  const [ isMenuShown, setIsMenuShown ] = useState(true);
+  const [ isMenuShown, setIsMenuShown ] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuShown(!isMenuShown);
