@@ -18,27 +18,21 @@
     font-size: 22px;
 
     &__item {
-      padding-top: 32px;
-      padding-left: 10px;
+      padding: 10px 0 0;
       position: relative;
 
-      &:hover::after {
-        content: "______________________";
-        position: absolute;
-        top: 50px;
-        left: -10px;
-        color: white;
-
-        
-      }
-      
       & > a {
         text-decoration: none;
         color: rgba($color: white, $alpha: 0.7);
         transition: 0.5s;
+        padding: 10px;
+        display: inline-block;
+        border-bottom: 2px solid transparent;
 
         &:hover {
           color: rgba($color: white, $alpha: 1);
+          cursor: pointer;
+          border-bottom: 2px solid white;
         }
       }
     }
