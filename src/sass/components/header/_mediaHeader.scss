@@ -1,0 +1,48 @@
+@media (min-width: 1200px) {
+  .header {
+    display: flex;
+    justify-content: center;
+
+    &__content {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+
+    .menu {
+
+      .call {
+
+        &__number {
+          display: none;
+        }
+      }
+    }
+
+    .title {
+      font-size: 60px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+
+    .title {
+      font-size: 50px;
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .header {
+
+    .title {
+      font-size: 40px;
+    }
+  }
+}

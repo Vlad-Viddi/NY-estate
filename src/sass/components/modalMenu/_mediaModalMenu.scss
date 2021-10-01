@@ -1,0 +1,19 @@
+@media (min-width: 1200px) {
+  .modalWrapper {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 300px;
+
+    .modalMenu {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .menuList__item {
+    font-size: 16px;
+  }
+}
