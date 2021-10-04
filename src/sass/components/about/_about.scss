@@ -1,0 +1,55 @@
+.about {
+  position: relative;
+  padding: $sidePaddings;
+  padding-top: 5%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+
+  @include textProps;
+
+  // transparetnt Bcg
+  &::before {
+    content: "";
+    background: url(../../../imgs/about/aboutBg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+
+    .title {
+      width: 40%;
+      font-family: $logoFont;
+      font-size: 42px;
+    }
+  
+    .description {
+      width: 60%;
+  
+      &__title {
+        padding-bottom: 16px;
+        color: $mainBlue;
+        font-weight: bold;
+        font-size: 20px;
+      }
+  
+      &__text {
+        font-size: 16px;
+        line-height: 1.5em;
+      }
+    }
+  }
+
+}

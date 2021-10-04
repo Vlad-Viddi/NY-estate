@@ -1,12 +1,14 @@
+import React from 'react';
+
+import './sass/index.scss';
+import { Header } from './js/components/Header/Header';
 import { About } from './js/components/About/About';
 
-function App() {
-  return (
-    <div className="App">
-      Start
-      <About />
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <Header />
+    <About />
+  </div>
+);
 
 export default App;
