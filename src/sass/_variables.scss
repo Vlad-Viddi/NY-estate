@@ -2,12 +2,25 @@
 // Paddings and Margins
 $sidePaddings:  3% 10% 7%;
 
+// Width and Height
+$maxContentWidth: 1200px;
+$minPageWidth: 300px;
+
 
 // Font styles, families, sizes
 $logoFont: 'Imprisha';
 $logoFontSize: 20px;
 
-@mixin textProps {
+// media Querries font-sizes
+// section title
+$_300-499SectTitleFontSize: 20px;
+$_500-849SectTitleFontSize: 24px;
+$_850-999SectTitleFontSize: 36px;
+$standartSectTitleFontSize: 42px;
+$_1400SectTitleFontSize: 60px;
+
+
+@mixin plainTextProps {
   font-family: "RobotoI";
   font-weight: 700;
 }
@@ -19,3 +32,4 @@ $menuIconWidth: 18px;
 
 // Colors
 $mainBlue: #0075FF;
+$hoveredBtn: #005ECC;

@@ -4,7 +4,7 @@
   background: no-repeat url("../../../imgs/header/2.jpg");
   background-size: cover;
   background-position: center 50%;
-  @include textProps;
+  @include plainTextProps;
 
   &__content {
     max-width: 1200px;

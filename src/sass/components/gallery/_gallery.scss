@@ -1,0 +1,78 @@
+.gallerySection {
+  padding: $sidePaddings;
+  display: flex;
+  justify-content: center;
+  min-width: $minPageWidth;
+  box-sizing: border-box;
+  background-color: rgba($color: #D3D3D3, $alpha: 0.1);
+
+  @include plainTextProps;
+
+  &__content {
+    max-width: $maxContentWidth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: $standartSectTitleFontSize;
+    font-family: $logoFont;
+  }
+
+  &__gallery {
+    font-size: 16px;
+
+    .photoLine {
+
+      &__pict {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0 24px;
+
+        .estate {
+          width: 37vw;
+          max-width: calc(1200px * 0.37);
+        }
+
+        .estate.left {
+          margin-right: 24px;
+        }
+      }
+
+      &__address {
+
+
+        &--blue {
+          color: $mainBlue;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-top: 32px;
+    font-size: 16px;
+    width: 15vw;
+    height: 5vw;
+    border-radius: 8px;
+    color: $mainBlue;
+    border: 2px solid $mainBlue;
+    background-color: white;
+    cursor: pointer;
+
+    transition: background-color 0.5s, color 0.5s;
+
+    &:hover {
+      background-color: $hoveredBtn;
+      color: white;
+      box-shadow: 0px 13px 27px rgba(0, 83, 181, 0.46);
+      
+    }
+
+    &:active {
+      box-shadow: 0px 8px 14px rgba(0, 83, 181, 0.48);
+    }
+  }
+}
