@@ -33,6 +33,13 @@
         .estate {
           width: 37vw;
           max-width: calc(1200px * 0.37);
+          transition: transform 0.5s, border-radius 0.5s;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.1);
+            border-radius: 3px;
+          }
         }
 
         .estate.left {
@@ -55,8 +62,10 @@
     margin-top: 32px;
     font-size: 16px;
     width: 15vw;
+    max-width: 240px;
     height: 5vw;
-    border-radius: 8px;
+    max-height: 80px;
+    border-radius: 5%/15%;
     color: $mainBlue;
     border: 2px solid $mainBlue;
     background-color: white;

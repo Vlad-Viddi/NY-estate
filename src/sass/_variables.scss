@@ -19,6 +19,22 @@ $_850-999SectTitleFontSize: 36px;
 $standartSectTitleFontSize: 42px;
 $_1400SectTitleFontSize: 60px;
 
+// Sub title
+$_300-499SubTitleFontSize: 14px;
+$_500-849SubTitleFontSize: 18px;
+$_850-999SubTitleFontSize: 18px;
+$standartSubTitleFontSize: 20px;
+$_1400SubTitleFontSize: 24px;
+$_2000SubTitleFontSize: 36px;
+
+// Plain text
+$_300-499TextFontSize: 12px;
+$_500-849TextFontSize: 14px;
+$_850-999TextFontSize: 14px;
+$standartTextFontSize: 16px;
+$_1400TextFontSize: 20px;
+$_2000TextFontSize: 25px;
+
 
 @mixin plainTextProps {
   font-family: "RobotoI";

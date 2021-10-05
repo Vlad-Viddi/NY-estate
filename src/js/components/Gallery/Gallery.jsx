@@ -9,7 +9,7 @@ import _32 from '../../../imgs/gallery/32.jpg';
 
 export const Gallery = () => {
   const handleViewAllClick = () => {
-    console.log('Lyaaaaps')
+    console.log('clicked')
   }
 
   return (
