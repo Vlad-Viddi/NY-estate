@@ -1,0 +1,139 @@
+@media (min-width: 1400px) {
+  .guests {
+
+    &__title {
+      font-size: $_1400SectTitleFontSize;
+    }
+  
+    &__people {
+  
+      .person {
+
+        &__name {
+          font-size: $_1400SubTitleFontSize;
+        }
+  
+        &__position {
+          font-size: $_1400TextFontSize;
+        }
+  
+        &__feedback {
+          font-size: $_1400TextFontSize;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 2000px) {
+  .guests {
+  
+    &__people {
+  
+      .person {
+
+          &__name {
+          font-size: $_2000SubTitleFontSize;
+        }
+  
+        &__position {
+          font-size: $_2000TextFontSize;
+        }
+  
+        &__feedback {
+          font-size: $_2000TextFontSize;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 100px) and (max-width: 499px) {
+  .guests {
+
+    &__title {
+      font-size: $_300-499SectTitleFontSize;
+      margin-bottom: 10px;
+    }
+  
+    &__people {
+      flex-direction: column;
+      align-items: center;
+  
+      .person {
+        padding-top: 20px;
+  
+        &__name {
+          font-size: $_300-499SubTitleFontSize;
+          padding-bottom: 0;
+        }
+  
+        &__position {
+          font-size: $_300-499TextFontSize;
+        }
+  
+        &__feedback {
+          font-size: $_300-499TextFontSize;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 849px) {
+  .guests {
+
+    &__title {
+      font-size: $_500-849SectTitleFontSize;
+      margin-bottom: 10px;
+    }
+  
+    &__people {
+      flex-direction: column;
+      align-items: center;
+  
+      .person {
+        padding-top: 20px;
+  
+        &__name {
+          font-size: $_500-849SubTitleFontSize;
+        }
+  
+        &__position {
+          font-size: $_500-849TextFontSize;
+        }
+  
+        &__feedback {
+          font-size: $_500-849TextFontSize;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1000px) {
+  .guests {
+
+    &__title {
+      font-size: $_850-999SectTitleFontSize;
+    }
+  
+    &__people {
+  
+      .person {
+  
+        &__name {
+          font-size: $_850-999SubTitleFontSize;
+        }
+  
+        &__position {
+          font-size: $_850-999TextFontSize;
+        }
+  
+        &__feedback {
+          font-size: $_850-999TextFontSize;
+        }
+      }
+    }
+  }
+}
