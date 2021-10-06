@@ -1,0 +1,98 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+  min-width: $minPageWidth;
+  padding: $sidePaddings;
+  box-sizing: border-box;
+
+  &__content {
+    max-width: $maxContentWidth;
+  }
+
+  &__title {
+    font-family: $logoFont;
+    font-size: $standartSectTitleFontSize;
+    text-align: center;
+  }
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+
+    .contactInfo {
+      display: flex;
+      justify-content: space-between;
+      @include plainTextProps;
+      margin-right: 30px;
+
+      &__content {
+        width: 20vw;
+        max-width: 250px;
+
+        .contactPart {
+          margin-bottom: 24px;
+
+          &__title {
+            color: $greyText;
+            padding-bottom: 8px;
+          }
+
+          &__info {
+            color: black;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .contactForm {
+
+      &__field {
+        display: block;
+        box-sizing: border-box;
+        width: 30vw;
+        min-width: 100px;
+        height: 4vw;
+        min-height: 48px;
+        margin: 0 0 16px;
+        padding-left: 17px;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        outline: none;
+        line-height: 1em;
+        background-color: $inputBgc;
+        @include plainTextProps;
+
+        &:hover {
+          border: 2px solid $inputHoverColor;
+        }
+
+        &:focus {
+          border: 2px solid $mainBlue;
+        }
+
+        &--textarea {
+          resize: none;
+          margin-bottom: 32px;
+          padding-top: 14px;
+          height: 12vw;
+        }
+
+        &--btn {
+          @include button;
+          padding: 0;
+
+          &:hover {
+            @include buttonHover;
+          }
+
+          &:active {
+            @include buttonActive;
+          }
+        }
+
+      }
+    }
+  }
+}

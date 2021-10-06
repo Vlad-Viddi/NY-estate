@@ -38,7 +38,7 @@ $_2000TextFontSize: 25px;
 
 @mixin plainTextProps {
   font-family: "RobotoI";
-  font-weight: 700;
+  font-weight: 400;
 }
 
 // Imgs and logos
@@ -50,3 +50,25 @@ $menuIconWidth: 18px;
 $mainBlue: #0075FF;
 $hoveredBtn: #005ECC;
 $greyText: #9FADC2;
+$inputBgc: #F7F8FF;
+$inputHoverColor: #CCD0E0;
+
+
+// Buttons
+@mixin button {
+  color: $mainBlue;
+  border: 2px solid $mainBlue;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+@mixin buttonHover {
+  background-color: $hoveredBtn;
+  color: white;
+  box-shadow: 0px 13px 27px rgba(0, 83, 181, 0.46);
+}
+
+@mixin buttonActive {
+  box-shadow: 0px 8px 14px rgba(0, 83, 181, 0.48);
+}
