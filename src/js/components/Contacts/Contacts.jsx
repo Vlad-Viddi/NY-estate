@@ -1,6 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export const Contacts = () => {
+  const [ name, setName ] = useState('');
+  const [ email, setEmail ] = useState('');
+  const [ message, setMessage ] = useState('');
+
+  const handleChange = e => {
+    if(e.target.type === 'text') {
+      setName(e.target.value);
+    } else if(e.target.type === 'email') {
+      setEmail(e.target.value)
+    } else {
+      setMessage(e.target.value);
+    }
+  }
+
+  const onSubmitForm = e => {
+    e.preventDefault();
+
+    setName('');
+    setEmail('');
+    setMessage('');
+  }
 
   return (
     <div className="contacts">
@@ -45,28 +66,38 @@ export const Contacts = () => {
           </div>
 
           <form
+            onSubmit={onSubmitForm}
             className="contactForm"
             method="POST"
             action="./"
           >
-            <input 
+            <input
+              value={name}
+              onChange={handleChange}
+              required
               type="text"
               name="name"
               placeholder="Name"
               className="contactForm__field contactForm__field--name"
             />
             <input
-              type="text"
+              value={email}
+              onChange={handleChange}
+              required
+              type="email"
               name="email"
               placeholder="Email"
               className="contactForm__field contactForm__field--email"
             />
             <textarea
+              value={message}
+              required
+              onChange={handleChange}
+              type="message"
               placeholder="Message"
               className="contactForm__field contactForm__field--textarea"
             />
             <button
-              type="button"
               className="contactForm__field contactForm__field--btn"
             >
               Consultation

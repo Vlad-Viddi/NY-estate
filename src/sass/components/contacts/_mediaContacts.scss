@@ -1,24 +1,12 @@
 @media (min-width: 1400px) {
   .contacts {
 
-    &__content {
-  
-    }
-  
     &__title {
       font-size: $_1400SectTitleFontSize;
     }
-  
+
     &__section {
       font-size: $_1400TextFontSize;
-  
-      .contactInfo {
-  
-      }
-  
-      .contactForm {
-        
-      }
     }
   }
 }
@@ -26,24 +14,8 @@
 @media (min-width: 2000px) {
   .contacts {
 
-    &__content {
-  
-    }
-  
-    &__title {
-  
-    }
-  
     &__section {
       font-size: $_2000TextFontSize;
-  
-      .contactInfo {
-  
-      }
-  
-      .contactForm {
-        
-      }
     }
   }
 }
@@ -67,11 +39,6 @@
       .contactInfo {
         flex-direction: column;
         margin-right: 0;
-
-        &__content {
-
-        }
-  
       }
   
       .contactForm {
@@ -84,7 +51,6 @@
             min-height: 20px;
           }
         }
-        
       }
     }
   }
@@ -93,36 +59,30 @@
 @media (min-width: 500px) and (max-width: 849px) {
   .contacts {
 
-    &__content {
-  
-    }
-  
     &__title {
       font-size: $_500-849SectTitleFontSize;
     }
-  
+
     &__section {
       flex-direction: column;
       font-size: $_500-849TextFontSize;
       margin-top: 40px;
-  
+
       .contactInfo {
         flex-direction: column;
         margin-right: 0;
 
         &__content {
-          // width: 70vw;
+          width: 70vw;
           max-width: 100%;
-
         }
       }
-  
+
       .contactForm {
 
         &__field {
           width: 70vw;
         }
-        
       }
     }
   }
@@ -131,24 +91,12 @@
 @media (min-width: 850px) and (max-width: 1000px) {
   .contacts {
 
-    &__content {
-  
-    }
-  
     &__title {
       font-size: $_850-999SectTitleFontSize;
     }
-  
+
     &__section {
       font-size: $_850-999TextFontSize;
-  
-      .contactInfo {
-  
-      }
-  
-      .contactForm {
-        
-      }
     }
   }
 }
