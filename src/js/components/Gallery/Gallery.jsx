@@ -8,8 +8,45 @@ import _22 from '../../../imgs/gallery/900x300/22.jpg';
 import _31 from '../../../imgs/gallery/900x300/31.jpg';
 import _32 from '../../../imgs/gallery/900x300/32.jpg';
 
-export const Gallery = () => {
-  const [ isViewAllShown, setIsViewAllShown ] = useState(true);
+export const Gallery = ({
+  setName, setEmail, setPhone, setMessage
+}) => {
+
+  const [ tempName, setTempName ] = useState('');
+  const [ tempEmail, setTempEmail ] = useState('');
+  const [ tempPhone, setTempPhone ] = useState('');
+  const [ tempMessage, setTempMessage ] = useState('');
+
+  const handleChange = e => {
+    if(e.target.name === 'name') {
+      setTempName(e.target.value);
+
+    } else if(e.target.name === 'email') {
+      setTempEmail(e.target.value)
+    } else if(e.target.name === 'phone') {
+      setTempPhone(e.target.value);
+    } else {
+      setTempMessage(e.target.value);
+    }
+  }
+
+  const onSubmitForm = e => {
+    e.preventDefault();
+    setName(tempName);
+    setEmail(tempEmail);
+    setPhone(tempPhone);
+    setMessage(tempMessage);
+
+    setTempName('');
+    setTempEmail('');
+    setTempPhone('');
+    setTempMessage('');
+  }
+
+
+
+  const [ isViewAllShown, setIsViewAllShown ] = useState(false);
+
   const handleViewAllClick = () => {
     setIsViewAllShown(!isViewAllShown);
   }
@@ -67,7 +104,14 @@ export const Gallery = () => {
 
       {
         isViewAllShown && (
-          <ShowAllPopup 
+          <ShowAllPopup
+            tempName={tempName}
+            tempEmail={tempEmail}
+            tempPhone={tempPhone}
+            tempMessage={tempMessage}
+            handleChange={handleChange}
+            onSubmitForm={onSubmitForm}
+
             isViewAllShown={isViewAllShown}
             setIsViewAllShown={setIsViewAllShown}
           />

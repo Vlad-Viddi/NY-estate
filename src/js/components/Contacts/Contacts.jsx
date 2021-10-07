@@ -1,26 +1,36 @@
 import React, { useState } from 'react';
 
-export const Contacts = () => {
-  const [ name, setName ] = useState('');
-  const [ email, setEmail ] = useState('');
-  const [ message, setMessage ] = useState('');
+export const Contacts = ({
+  setName, setEmail, setPhone, setMessage,
+}) => {
+  const [ tempName, setTempName ] = useState('');
+  const [ tempEmail, setTempEmail ] = useState('');
+  const [ tempPhone, setTempPhone ] = useState('');
+  const [ tempMessage, setTempMessage ] = useState('');
 
   const handleChange = e => {
-    if(e.target.type === 'text') {
-      setName(e.target.value);
-    } else if(e.target.type === 'email') {
-      setEmail(e.target.value)
+    if(e.target.name === 'name') {
+      setTempName(e.target.value);
+    } else if(e.target.name === 'email') {
+      setTempEmail(e.target.value)
+    } else if(e.target.name === 'phone') {
+      setTempPhone(e.target.value);
     } else {
-      setMessage(e.target.value);
+      setTempMessage(e.target.value);
     }
   }
 
   const onSubmitForm = e => {
     e.preventDefault();
+    setName(tempName);
+    setEmail(tempEmail);
+    setPhone(tempPhone);
+    setMessage(tempMessage);
 
-    setName('');
-    setEmail('');
-    setMessage('');
+    setTempName('');
+    setTempEmail('');
+    setTempPhone('');
+    setTempMessage('');
   }
 
   return (
@@ -72,7 +82,7 @@ export const Contacts = () => {
             action="./"
           >
             <input
-              value={name}
+              value={tempName}
               onChange={handleChange}
               required
               type="text"
@@ -81,7 +91,7 @@ export const Contacts = () => {
               className="contactForm__field contactForm__field--name"
             />
             <input
-              value={email}
+              value={tempEmail}
               onChange={handleChange}
               required
               type="email"
@@ -89,11 +99,20 @@ export const Contacts = () => {
               placeholder="Email"
               className="contactForm__field contactForm__field--email"
             />
+            <input
+              value={tempPhone}
+              onChange={handleChange}
+              required
+              type="tel"
+              name="phone"
+              placeholder="Phone"
+              className="contactForm__field contactForm__field--phone"
+            />
             <textarea
-              value={message}
+              value={tempMessage}
               required
               onChange={handleChange}
-              type="message"
+              name="message"
               placeholder="Message"
               className="contactForm__field contactForm__field--textarea"
             />
