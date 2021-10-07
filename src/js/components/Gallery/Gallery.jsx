@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+import { ShowAllPopup } from '../ShowAllPopup/ShowAllPopup';
 import _11 from '../../../imgs/gallery/900x300/11.jpg';
 import _12 from '../../../imgs/gallery/900x300/12.png';
 import _21 from '../../../imgs/gallery/900x300/21.jpg';
@@ -8,8 +9,9 @@ import _31 from '../../../imgs/gallery/900x300/31.jpg';
 import _32 from '../../../imgs/gallery/900x300/32.jpg';
 
 export const Gallery = () => {
+  const [ isViewAllShown, setIsViewAllShown ] = useState(true);
   const handleViewAllClick = () => {
-    console.log('clicked')
+    setIsViewAllShown(!isViewAllShown);
   }
 
   return (
@@ -62,6 +64,15 @@ export const Gallery = () => {
           View All
         </button>
       </div>
+
+      {
+        isViewAllShown && (
+          <ShowAllPopup 
+            isViewAllShown={isViewAllShown}
+            setIsViewAllShown={setIsViewAllShown}
+          />
+        )
+      }
     </div>
   )
 }

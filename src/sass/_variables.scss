@@ -49,3 +49,14 @@ $menuIconWidth: 18px;
 // Colors
 $mainBlue: #0075FF;
 $hoveredBtn: #005ECC;
+
+
+// modal specs
+@mixin modalParams {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}

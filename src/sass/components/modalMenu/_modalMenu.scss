@@ -1,17 +1,13 @@
 .modalWrapper {
-  width: 100vw;
-  height: 100vh;
+  @include modalParams;
+
   background-color: rgba($color: $mainBlue, $alpha: 1);
-  position: fixed;
-  top: 0;
-  left: 0;
   padding: $sidePaddings;
   box-sizing: border-box;
-  min-width: 300px;
-  z-index: 3;
+  min-width: $minPageWidth;
 
   .modalMenu {
-    max-width: 1200px;
+    max-width: $maxContentWidth;
     padding-top: 60px;
 
     &__remover {
