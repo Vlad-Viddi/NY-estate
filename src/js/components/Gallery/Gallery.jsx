@@ -1,11 +1,11 @@
 import React from 'react';
 
-import _11 from '../../../imgs/gallery/11.jpg';
-import _12 from '../../../imgs/gallery/12.png';
-import _21 from '../../../imgs/gallery/21.jpg';
-import _22 from '../../../imgs/gallery/22.jpg';
-import _31 from '../../../imgs/gallery/31.jpg';
-import _32 from '../../../imgs/gallery/32.jpg';
+import _11 from '../../../imgs/gallery/900x300/11.jpg';
+import _12 from '../../../imgs/gallery/900x300/12.png';
+import _21 from '../../../imgs/gallery/900x300/21.jpg';
+import _22 from '../../../imgs/gallery/900x300/22.jpg';
+import _31 from '../../../imgs/gallery/900x300/31.jpg';
+import _32 from '../../../imgs/gallery/900x300/32.jpg';
 
 export const Gallery = () => {
   const handleViewAllClick = () => {
