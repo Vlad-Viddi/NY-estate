@@ -28,8 +28,6 @@ export const Guests = () => {
             </p>
           </div>
 
-
-
           <div className="person">
             <img
               className="person__photo"
@@ -44,7 +42,6 @@ export const Guests = () => {
               The members lounge offers a nice, full breakfast and the restaurant next door is convenient. 
             </p>
           </div>
-
 
           <div className="person">
             <img
