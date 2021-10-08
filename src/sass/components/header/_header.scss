@@ -63,7 +63,7 @@
           opacity: 0;
           padding-right: 10px;
           font-size: 17px;
-          transform: translateX(150px);
+          transform: translateY(-150px);
           text-decoration: none;
           color: white;
   
@@ -80,7 +80,7 @@
           cursor: pointer;
           opacity: 1;
           transform: translateX(0px); 
-          transition: opacity 0.5s, transform 0.25s linear;
+          transition: opacity 1s, transform 0.25s linear;
         }
       }
     }
