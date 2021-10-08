@@ -7,6 +7,7 @@ import { Gallery } from './js/components/Gallery/Gallery';
 import { Guests } from './js/components/Guests/Guests';
 import { Contacts } from './js/components/Contacts/Contacts';
 import { Footer } from './js/components/Footer/Footer';
+import { ScrollToTop } from './js/components/ScrolltoTop/ScrollToTop';
 
 const App = () => {
   const [ name, setName ] = useState('');
@@ -63,6 +64,7 @@ const App = () => {
       onSubmitForm={onSubmitForm}
     />
     <Footer />
+    <ScrollToTop />
   </div>
 )};
 
