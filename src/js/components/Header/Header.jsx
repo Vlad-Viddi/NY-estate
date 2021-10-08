@@ -16,14 +16,14 @@ export const Header = () => {
     <header className="header" id="home">
       <div className="header__content">
         <div className="logoVrapper">
-          <div className="logo">
+          <a className="logo" href="/">
             <img
               src={logo}
               alt="logo"
               className="logo__img"
             />
             <span className="logo__text">ERE</span>
-          </div>
+          </a>
         </div>
         <div className="menu">
           <div className="nav">
