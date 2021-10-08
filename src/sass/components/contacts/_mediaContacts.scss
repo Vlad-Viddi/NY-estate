@@ -39,6 +39,10 @@
       .contactInfo {
         flex-direction: column;
         margin-right: 0;
+
+        &__content {
+          width: 70vw;
+        }
       }
   
       .contactForm {
