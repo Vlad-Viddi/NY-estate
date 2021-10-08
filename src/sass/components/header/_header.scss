@@ -49,6 +49,8 @@
         &__icon {
           width: $menuIconWidth;
           padding: 10px;
+          position: relative;
+          z-index: 4;
         }
       }
   

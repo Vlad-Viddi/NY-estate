@@ -34,7 +34,7 @@ export const Contacts = ({
   }
 
   return (
-    <div className="contacts">
+    <div className="contacts" id="contacts">
       <div className="contacts__content">
 
         <h2 className="contacts__title">Contact Us</h2>

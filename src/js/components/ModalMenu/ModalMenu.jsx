@@ -48,10 +48,10 @@ export const ModalMenu = ({ toggleMenu }) => {
           </li>
           <li className="menuList__item">
             <a
-              href="#testimonials"
+              href="#guests"
               onClick={toggleMenu}
             >
-              TESTIMONIALS
+              GUEST'S REFERENCES
             </a>
           </li>
           <li className="menuList__item">
