@@ -42,7 +42,7 @@ export const Contacts = ({
         <div className="contacts__section">
 
           <div className="contactInfo">
-            <div className="contactInfo__content contactInfo__info--phoneEmail">
+            <div className="contactInfo__content contactInfo__content--phoneEmail">
               <div className="contactPart phone">
                 <p className="contactPart__title">Phone</p>
                 <a
@@ -64,7 +64,7 @@ export const Contacts = ({
 
             </div>
 
-            <div className="contactInfo__content contactInfo__info--address">
+            <div className="contactInfo__content contactInfo__content--address">
               <div className="contactPart address">
                 <p className="contactPart__title">Address</p>
                 <p className="contactPart__info">

@@ -28,7 +28,11 @@
 
       &__content {
         width: 20vw;
-        max-width: 250px;
+        max-width: 280px;
+
+        &--address {
+          margin-right: 10px;
+        }
 
         .contactPart {
           margin-bottom: 24px;
@@ -53,6 +57,7 @@
         box-sizing: border-box;
         width: 30vw;
         min-width: 100px;
+        max-width: 550px;
         height: 4vw;
         min-height: 48px;
         margin: 0 0 16px;
