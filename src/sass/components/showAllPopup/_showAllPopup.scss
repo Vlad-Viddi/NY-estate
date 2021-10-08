@@ -16,8 +16,10 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 50%;
-    height: 50%;
+    width: 50vw;
+    max-width: $maxContentWidth;
+    height: 70vh;
+    box-sizing: border-box;
     background-color: rgba($color: $inputBgc, $alpha: 1);
     border-radius: 8px;
     padding: 5%;
