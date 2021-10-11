@@ -1,4 +1,20 @@
 .hambCross {
   width: $menuIconWidth;
   padding: 10px;
+
+  &--hamb {
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+
+  &--close {
+
+    &:hover {
+      transform: rotate(360deg);
+      transition: transform 0.5s ease-in-out;
+    }
+  }
 }

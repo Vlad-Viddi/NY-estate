@@ -11,14 +11,14 @@ export const HambCross = ({ toggleMenu, isMenuShown }) => {
         <img
           src={sandwich}
           alt="sandwich menu"
-          className="hambCross"
+          className="hambCross hambCross--hamb"
           onClick={toggleMenu}
         />
       ) : (
         <img
           src={closeIcon}
           alt="cross menu"
-          className="hambCross"
+          className="hambCross hambCross--close"
           onClick={toggleMenu}
         />
       )}

@@ -13,10 +13,10 @@ export const Header = () => {
   }
 
   return (
-    <header className="header" id="home">
+    <header className="header" id="/">
       <div className="header__content">
         <div className="logoVrapper">
-          <a className="logo" href="/">
+          <a className="logo" href="#/">
             <img
               src={logo}
               alt="logo"

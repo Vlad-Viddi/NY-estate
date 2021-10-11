@@ -1,0 +1,61 @@
+@media (min-width: 1400px) {
+  .map {
+
+    &__title {
+      font-size: $_1400SectTitleFontSize;
+    }
+  }
+}
+
+@media (min-width: 100px) and (max-width: 499px) {
+  .map {
+    padding: 0;
+
+    &__content {
+      width: 100vw;
+      padding: 0;
+    }
+
+    &__title {
+      font-size: $_300-499SectTitleFontSize;
+    }
+
+    .position {
+
+      &__map {
+        width: 90vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 849px) {
+  .map {
+    padding: 0;
+
+    &__content {
+      width: 100vw;
+      padding: 0;
+    }
+
+    &__title {
+      font-size: $_500-849SectTitleFontSize;
+    }
+
+    .position {
+
+      &__map {
+        width: 90vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1000px) {
+  .map {
+
+    &__title {
+      font-size: $_850-999SectTitleFontSize;
+    }
+  }
+}

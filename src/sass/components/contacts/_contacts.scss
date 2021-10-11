@@ -37,6 +37,10 @@
         .contactPart {
           margin-bottom: 24px;
 
+          &--address {
+            cursor: pointer;
+          }
+
           &__title {
             color: $greyText;
             padding-bottom: 8px;

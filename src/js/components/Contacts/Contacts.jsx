@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { Map } from '../Map/Map';
+
 export const Contacts = ({
   setName, setEmail, setPhone, setMessage,
 }) => {
@@ -7,6 +9,10 @@ export const Contacts = ({
   const [ tempEmail, setTempEmail ] = useState('');
   const [ tempPhone, setTempPhone ] = useState('');
   const [ tempMessage, setTempMessage ] = useState('');
+
+  const [ isMapVisible, setIsMapVisible ] = useState(false);
+
+  const toggleMap = () => setIsMapVisible(!isMapVisible);
 
   const handleChange = e => {
     if(e.target.name === 'name') {
@@ -65,7 +71,10 @@ export const Contacts = ({
             </div>
 
             <div className="contactInfo__content contactInfo__content--address">
-              <div className="contactPart address">
+              <div
+                onClick={toggleMap}
+                className="contactPart--address"
+              >
                 <p className="contactPart__title">Address</p>
                 <p className="contactPart__info">
                   160&nbsp;Central&nbsp;Park&nbsp;South, 
@@ -126,6 +135,11 @@ export const Contacts = ({
         </div>
 
       </div>
+      { isMapVisible && (
+        <Map
+          toggleMap={toggleMap }
+        />
+      )}
     </div>
   )
 }

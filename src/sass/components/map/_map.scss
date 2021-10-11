@@ -1,0 +1,46 @@
+.map {
+  @include modalParams;
+
+  // the same is on showAllPopup
+  background-color: rgba($color: $mainBlue, $alpha: 0.7);
+  padding: $sidePaddings;
+  box-sizing: border-box;
+  min-width: $minPageWidth;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    // the same is on showAllPopup
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50vw;
+    max-width: $maxContentWidth;
+    height: 70vh;
+    box-sizing: border-box;
+    background-color: rgba($color: $inputBgc, $alpha: 1);
+    border-radius: 8px;
+    padding: 5%;
+  }
+
+  &__title {
+    // the same is on showAllPopup
+    font-size: $standartSectTitleFontSize;
+    font-family: $logoFont;
+    margin-bottom: 40px;
+  }
+
+  .position {
+
+    &__map {
+      width: 40vw;
+      max-width: 1000px;
+      height: 50vh;
+      border: none;
+    }
+  }
+}
