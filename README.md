@@ -1,6 +1,6 @@
-Eseex real Estate New York
+Essex Real Estate New York
 
-[Demo link] (https://vlad-viddi.github.io/NY-estate/)
+[Demo link] - https://vlad-viddi.github.io/NY-estate/
 
 Techs used in this project:
 * HTML
