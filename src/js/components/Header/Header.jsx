@@ -15,7 +15,10 @@ export const Header = () => {
   return (
     <header className="header" id="/">
       <div className="header__content">
-        <div className="logoVrapper">
+        <div
+          onClick={() => setIsMenuShown(false)}
+          className="logoVrapper"
+        >
           <a className="logo" href="#/">
             <img
               src={logo}
