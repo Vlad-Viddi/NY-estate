@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { Map } from '../Map/Map';
+import onMap from '../../../imgs/contacts/onMap.png';
 
 export const Contacts = ({
   setName, setEmail, setPhone, setMessage,
@@ -73,12 +74,17 @@ export const Contacts = ({
             <div className="contactInfo__content contactInfo__content--address">
               <div
                 onClick={toggleMap}
-                className="contactPart--address"
+                className="contactPart contactPart--address"
               >
                 <p className="contactPart__title">Address</p>
                 <p className="contactPart__info">
                   160&nbsp;Central&nbsp;Park&nbsp;South, 
                   New&nbsp;York, NY&nbsp;10019
+                  <img
+                    src={onMap}
+                    className="contactPart__onMap"
+                    alt="pointer on map"
+                  />
                 </p>
               </div>
             </div>

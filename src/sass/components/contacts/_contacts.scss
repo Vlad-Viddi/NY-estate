@@ -50,6 +50,13 @@
             color: black;
             text-decoration: none;
           }
+
+          &__onMap {
+            width: 32px;
+            display: inline-block;
+            position: relative;
+            bottom: -5px;
+          }
         }
       }
     }
