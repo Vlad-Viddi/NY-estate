@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { ModalMenu } from '../ModalMenu/ModalMenu';
+import { HambCross } from '../HambCross/HambCross';
 
 import logo from '../../../imgs/header/icons/image.png';
 import phone from '../../../imgs/header/icons/phone-mob.svg';
-import sandwich from '../../../imgs/header/icons/sandwich.svg';
 
 export const Header = () => {
   const [ isMenuShown, setIsMenuShown ] = useState(false);
@@ -27,12 +27,10 @@ export const Header = () => {
         </div>
         <div className="menu">
           <div className="nav">
-            <img
-                src={sandwich}
-                alt="sandwich icon"
-                className="nav__icon"
-                onClick={toggleMenu}
-              />
+            <HambCross
+              toggleMenu={toggleMenu}
+              isMenuShown={isMenuShown}
+            />
           </div>
           <div className="call">
             <a

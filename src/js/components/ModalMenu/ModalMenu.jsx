@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 
-import closeIcon from '../../../imgs/header/icons/close.svg';
-
 export const ModalMenu = ({ toggleMenu }) => {
 
   //disable scroll when modal is shown
@@ -14,13 +12,6 @@ export const ModalMenu = ({ toggleMenu }) => {
   return (
     <div className="modalWrapper">
       <div className="modalMenu">
-        <img
-          src={closeIcon}
-          onClick={toggleMenu}
-          className="modalMenu__remover"
-          alt="close icon"
-        />
-
         <ul className="menuList">
           <li className="menuList__item">
             <a

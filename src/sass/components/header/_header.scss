@@ -39,19 +39,13 @@
       position: relative;
       top: -40px;
       color: white;
+      z-index: 4;
   
       .nav {
   
         &:hover {
           cursor: pointer;
           transform: scale(1.1);
-        }
-  
-        &__icon {
-          width: $menuIconWidth;
-          padding: 10px;
-          position: relative;
-          z-index: 4;
         }
       }
   
