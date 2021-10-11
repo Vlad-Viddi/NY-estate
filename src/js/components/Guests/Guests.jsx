@@ -1,6 +1,6 @@
 import React from 'react';
 
-import _1 from '../../../imgs/guests/1.webp';
+import _1 from '../../../imgs/guests/1.jpg';
 import _2 from '../../../imgs/guests/2.jpeg';
 import _3 from '../../../imgs/guests/3.jpg';
 
