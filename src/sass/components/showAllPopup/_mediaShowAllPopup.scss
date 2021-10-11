@@ -17,6 +17,10 @@
 @media (min-width: 2000px) {
   .showAll {
 
+    &__content {
+      height: 50vh;
+    }
+
     .form {
 
       &__field {

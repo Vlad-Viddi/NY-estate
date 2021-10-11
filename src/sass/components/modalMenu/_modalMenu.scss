@@ -2,9 +2,6 @@
   @include modalParams;
 
   background-color: rgba($color: $mainBlue, $alpha: 1);
-  padding: $sidePaddings;
-  box-sizing: border-box;
-  min-width: $minPageWidth;
 
   .modalMenu {
     max-width: $maxContentWidth;

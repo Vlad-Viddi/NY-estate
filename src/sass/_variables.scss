@@ -1,6 +1,7 @@
 
 // Paddings and Margins
 $sidePaddings:  3% 10% 7%;
+$sectionTitleMarginBottom: 80px;
 
 // Width and Height
 $maxContentWidth: 1200px;
@@ -45,7 +46,6 @@ $_2000TextFontSize: 25px;
 $menuIconWidth: 18px;
 
 
-
 // Colors
 $mainBlue: #0075FF;
 $hoveredBtn: #005ECC;
@@ -82,4 +82,28 @@ $inputHoverColor: #CCD0E0;
   top: 0;
   left: 0;
   z-index: 3;
+  padding: $sidePaddings;
+  box-sizing: border-box;
+  min-width: $minPageWidth;
+  background-color: rgba($color: $mainBlue, $alpha: 0.7);
+}
+
+// center content
+@mixin centerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin popupContent {
+  flex-direction: column;
+  position: relative;
+  width: 50vw;
+  max-width: $maxContentWidth;
+  height: 70vh;
+  max-height: $maxContentWidth;
+  box-sizing: border-box;
+  background-color: rgba($color: $inputBgc, $alpha: 1);
+  border-radius: 8px;
+  padding: 5%;
 }
