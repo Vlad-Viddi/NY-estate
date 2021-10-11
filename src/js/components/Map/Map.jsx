@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 
-import closeIcon from '../../../imgs/gallery/close.svg';
+import { CloseBtn } from '../CloseBtn/CloseBtn';
 
 export const Map = ({ toggleMap }) => {
 
-    //disable scroll when modal is shown
-    useEffect(() => {
-      document.body.style.overflow = 'hidden';
-  
-      return () => document.body.style.overflow = 'unset';
-    }, []);
+  //disable scroll when modal is shown
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+
+    return () => document.body.style.overflow = 'unset';
+  }, []);
 
   return (
     <section className="map">
@@ -24,12 +24,7 @@ export const Map = ({ toggleMap }) => {
           title="our location"
         />
         </div>
-        <img
-          className="showAll__close"
-          src={closeIcon}
-          alt="close icon"
-          onClick={toggleMap}
-        />
+        <CloseBtn handleClick={toggleMap}/>
       </div>
     </section>
   )

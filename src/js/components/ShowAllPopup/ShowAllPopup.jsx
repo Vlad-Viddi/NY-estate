@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import closeIcon from '../../../imgs/gallery/close.svg';
+import { CloseBtn } from '../CloseBtn/CloseBtn';
 
 export const ShowAllPopup = ({ 
   tempName,
@@ -77,14 +77,8 @@ export const ShowAllPopup = ({
           Send
         </button>
       </form>
-      <img
-          className="showAll__close"
-          src={closeIcon}
-          alt="close icon"
-          onClick={handleClick}
-        />
+      <CloseBtn handleClick={handleClick}/>
       </div>
     </div>
-
   )
 }
