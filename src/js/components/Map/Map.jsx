@@ -1,15 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { useDisableScroll } from '../../helpers/useDisableScroll';
 
 import { CloseBtn } from '../CloseBtn/CloseBtn';
 
 export const Map = ({ toggleMap }) => {
-
-  //disable scroll when modal is shown
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-
-    return () => document.body.style.overflow = 'unset';
-  }, []);
+  useDisableScroll();
 
   return (
     <section className="map">

@@ -1,4 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+
+import { useDisableScroll } from '../../helpers/useDisableScroll';
 
 import { CloseBtn } from '../CloseBtn/CloseBtn';
 
@@ -13,12 +15,7 @@ export const ShowAllPopup = ({
   setIsViewAllShown
 }) => {
 
-  // disable scroll when modal is on
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-
-    return () => document.body.style.overflow = "unset";
-  }, []);
+  useDisableScroll();
 
   const handleClick = () => setIsViewAllShown(!isViewAllShown);
   const onSubmitFormBinded = e => {

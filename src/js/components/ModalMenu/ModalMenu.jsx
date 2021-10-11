@@ -1,13 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+
+import { useDisableScroll } from '../../helpers/useDisableScroll';
 
 export const ModalMenu = ({ toggleMenu }) => {
-
-  //disable scroll when modal is shown
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-
-    return () => document.body.style.overflow = 'unset';
-  }, []);
+  useDisableScroll();
 
   return (
     <div className="modalWrapper">
