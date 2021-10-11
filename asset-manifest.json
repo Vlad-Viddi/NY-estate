@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/NY-estate/static/css/main.066cfc0f.chunk.css",
-    "main.js": "/NY-estate/static/js/main.daf6174d.chunk.js",
-    "main.js.map": "/NY-estate/static/js/main.daf6174d.chunk.js.map",
+    "main.js": "/NY-estate/static/js/main.3e9611f2.chunk.js",
+    "main.js.map": "/NY-estate/static/js/main.3e9611f2.chunk.js.map",
     "runtime-main.js": "/NY-estate/static/js/runtime-main.d7f55ae2.js",
     "runtime-main.js.map": "/NY-estate/static/js/runtime-main.d7f55ae2.js.map",
     "static/js/2.b8594ed0.chunk.js": "/NY-estate/static/js/2.b8594ed0.chunk.js",
@@ -10,14 +10,14 @@
     "index.html": "/NY-estate/index.html",
     "static/css/main.066cfc0f.chunk.css.map": "/NY-estate/static/css/main.066cfc0f.chunk.css.map",
     "static/js/2.b8594ed0.chunk.js.LICENSE.txt": "/NY-estate/static/js/2.b8594ed0.chunk.js.LICENSE.txt",
-    "static/media/1.cbcc5de4.webp": "/NY-estate/static/media/1.cbcc5de4.webp",
+    "static/media/1.6c19e186.jpg": "/NY-estate/static/media/1.6c19e186.jpg",
     "static/media/11.254f11dc.jpg": "/NY-estate/static/media/11.254f11dc.jpg",
     "static/media/12.2ed08d3c.png": "/NY-estate/static/media/12.2ed08d3c.png",
+    "static/media/2.48fa5309.jpeg": "/NY-estate/static/media/2.48fa5309.jpeg",
     "static/media/index.scss": "/NY-estate/static/media/aboutBg.a7fa2b1d.jpg",
-    "static/media/2.d3717957.jpeg": "/NY-estate/static/media/2.d3717957.jpeg",
     "static/media/21.023a5fb9.jpg": "/NY-estate/static/media/21.023a5fb9.jpg",
     "static/media/22.2fdec161.jpg": "/NY-estate/static/media/22.2fdec161.jpg",
-    "static/media/3.aa5c18bb.jpg": "/NY-estate/static/media/3.aa5c18bb.jpg",
+    "static/media/3.57cee869.jpg": "/NY-estate/static/media/3.57cee869.jpg",
     "static/media/31.a0f3b8a3.jpg": "/NY-estate/static/media/31.a0f3b8a3.jpg",
     "static/media/32.6414d412.jpg": "/NY-estate/static/media/32.6414d412.jpg",
     "static/media/close.48ac9eb8.svg": "/NY-estate/static/media/close.48ac9eb8.svg",
@@ -31,6 +31,6 @@
     "static/js/runtime-main.d7f55ae2.js",
     "static/js/2.b8594ed0.chunk.js",
     "static/css/main.066cfc0f.chunk.css",
-    "static/js/main.daf6174d.chunk.js"
+    "static/js/main.3e9611f2.chunk.js"
   ]
 }
